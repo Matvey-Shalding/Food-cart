@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  <title>Корзина</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-header">
+        <div class="header-header-container">
+          <div class="header-logo"><img src="./imajes/header-logo.svg" alt="header-logo"></div>
+          <div class="menu-burg-wrapper"><span hidden class="menu-burger"></span></div>
+          <div class="header-items">
+            <nav class="header-nav">
+              <ul class="header-list">
+                <li class="header-list-item"><a href="">Главная</a></li>
+                <li class="header-list-item"><a href="">Товары</a></li>
+                <li class="header-list-item"><a href="">Q&A</a></li>
+                <li class="header-list-item"><a href="">Статьи</a></li>
+                <li class="header-list-item"><a href="">О нас</a></li>
+                <li class="header-list-item"><a href="">Оплата и доставка</a></li>
+                <li class="header-list-item"><a href="">Контакты</a></li>
+                <li class="header-list-item header-list-item-tel"><a href="tel:+79261716766">+7 926 171 67 66</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-tel">
+            <a href="tel:+79261716766" class="tel">+7 926 171 67 66</a>
+            <a href="tel:+79261716766" class="header-tel-icon"><svg width="30px" height="30px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M176,220C98.80371,220,36,157.19629,36,80A52.06484,52.06484,0,0,1,81.4209,28.41211a12.01552,12.01552,0,0,1,12.47558,7.19141L113.9873,82.48047a11.97729,11.97729,0,0,1-.99023,11.2998L96.36133,119.19922a3.938,3.938,0,0,0-.291,3.86035h.001a80.54061,80.54061,0,0,0,37.19726,37.0293,3.93771,3.93771,0,0,0,3.8711-.31836l25.03515-16.69434a11.96393,11.96393,0,0,1,11.38379-1.0459l46.83789,20.07325a12.01851,12.01851,0,0,1,7.19141,12.4746A52.06486,52.06486,0,0,1,176,220ZM82.89941,36.31934a3.71329,3.71329,0,0,0-.47558.03027A44.04825,44.04825,0,0,0,44,80c0,72.78516,59.21484,132,132,132a44.04828,44.04828,0,0,0,43.65039-38.4248,3.98053,3.98053,0,0,0-2.40625-4.11817L170.4082,149.38379a3.99519,3.99519,0,0,0-3.7959.34863l-25.03515,16.69434A11.96472,11.96472,0,0,1,129.79,167.294a88.58663,88.58663,0,0,1-40.9082-40.72364l.001.001a11.96889,11.96889,0,0,1,.78516-11.75293l16.63574-25.41895a3.99531,3.99531,0,0,0,.33008-3.76855L86.543,38.75586A3.99936,3.99936,0,0,0,82.89941,36.31934Z" />
+            </svg></a>
+          </div>
+          <div class="header-actions">
+            <div class="header-basket"><img src="./imajes/shopping-cart.svg" alt="shopping-cart"></div>
+            <div class="header-favorites"><img src="./imajes/like.svg" alt="header-favorites"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="bread-crumbs"><span class="light">Главная /</span><span class="bold">Корзина</span></div>
+      <div class="cart">
+        <div class="cart-container">
+          <div class="cart-titles">
+            <div class="cart-title">Корзина</div>
+            <div class="cart-chain">
+              <span class="current cart-related">Корзина</span>
+              <img src="./imajes/arrow-next.svg" alt="">
+              <span class="not-current ordering-related">Оформление заказа</span>
+              <img src="./imajes/arrow-next.svg" alt="">
+              <span class="not-current ready-related">Готово!</span>
+            </div>
+          </div>
+          <div class="cart-body">
+            <div class="cart-body-container">
+            <div class="cart-body-goods">
+              <div class="cart-body-good">
+                <div class="cart-body-good-img"><img src="./imajes/good.jpg" alt=""></div>
+                <div class="cart-body-good-content">
+                  <div class="body-good-content-top">
+                    <div class="good-content-top-titles">
+                      <div class="body-good-content-titles-title">Detox набор</div>
+                      <div class="body-good-content-titles-subtitle">Sorbent + Antifungal</div>
+                    </div>
+                    <div class="body-good-content-top-bin"><img src="./imajes/bin.svg" alt=""></div>
+                  </div>
+                  <div class="body-good-content-bottom">
+                    <div class="good-content-bottom-counter">
+                      <span class="plus">+</span>
+                      <span class="count">1</span>
+                      <span class="minus">-</span>
+                    </div>
+                    <div class="good-content-bottom-price" data-price="790">790₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-body-good">
+                <div class="cart-body-good-img"><img src="./imajes/good.jpg" alt=""></div>
+                <div class="cart-body-good-content">
+                  <div class="body-good-content-top">
+                    <div class="good-content-top-titles">
+                      <div class="body-good-content-titles-title">Detox набор</div>
+                      <div class="body-good-content-titles-subtitle">Sorbent + Antifungal</div>
+                    </div>
+                    <div class="body-good-content-top-bin"><img src="./imajes/bin.svg" alt=""></div>
+                  </div>
+                  <div class="body-good-content-bottom">
+                    <div class="good-content-bottom-counter">
+                      <span class="plus">+</span>
+                      <span class="count">1</span>
+                      <span class="minus">-</span>
+                    </div>
+                    <div class="good-content-bottom-price" data-price="790">790₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-body-ordering">
+              <div class="cart-body-ordering-title"><img src="./imajes/label.svg" alt=""><span>Сумма заказа</span></div>
+              <div class="cart-body-ordering-content">
+                <div class="cart-body-ordering-content-total">
+                  <div class="body-ordering-content-total-names">
+                    <div class="ordering-content-total-names-good">Сумма товаров</div>
+                    <div class="ordering-content-total-names-delivering">Доставка</div>
+                    <div class="ordering-content-total-names-total">Итог</div>
+                  </div>
+                  <div class="body-ordering-content-total-prices">
+                    <div class="ordering-content-total-prices-good">1580₽</div>
+                    <div class="ordering-content-total-prices-delivering">300₽</div>
+                    <div class="ordering-content-total-prices-total">0</div>
+                  </div>
+                </div>
+              <div class="cart-body-ordering-content-freeDelivering">
+                <div class="body-ordering-content-freeDelivering-title">Бесплатная доставка</div>
+                <div class="body-ordering-content-freeDelivering-description">Доставка в нашем магазине при заказе на сумму от <span
+                    class="style">2000₽ абсолютно бесплатна!</span>
+                  Добавьте товаров еще на <span class="style" id="how-many">420₽</span> и Вам станет доступна бесплатная доставка.
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-btn"><span>Оформить заказ</span></div>
+          <div class="cart-margin"></div>
+          </div>
+        </div>
+      </div>
+      <div class="offering">
+        <div class="offering-container">
+          <form method="get" action="#" class="offering-form">
+            <div class="offering-form-title">Ваши данные</div>
+            <div class="offering-form-block">
+              <span class="offering-form-label">Имя</span>
+              <input type="text" placeholder="Ваше имя">
+              <span class="error-message">Укажите имя.</span>
+            </div>
+            <div class="offering-form-block">
+              <span class="offering-form-label">Фамилия</span>
+              <input type="text" placeholder="Ваша Фамилия">
+              <span class="error-message">Укажите фамилию.</span>
+            </div>
+            <div class="offering-form-block">
+              <span class="offering-form-label">Email*</span>
+              <input type="text" placeholder="Sample@mail.ru">
+              <span class="error-message">Укажите Email</span>
+            </div>
+            <div class="offering-form-block">
+              <span class="offering-form-label">Телефон*</span>
+              <input type="text" placeholder="+7 (000) 000 00 00">
+              <span class="error-message">Укажите телефон.</span>
+            </div>
+            <div class="offering-form-title">Адрес доставки</div>
+            <div class="offering-form-firstRow">
+          <div class="offering-form-select">
+            <div class="offering-form-label">Область / регион</div>
+            <input type="text" class="offering-form-select-selector" placeholder="Москва" value="Москва">
+            <div class="offering-form-select-menu">
+              <span>Новосибирск</span>
+              <span>Волгоград</span>
+            </div>
+            <span class="error-message">Укажите регион.</span>
+            </div>
+            <div class="offering-form-mail">
+              <div class="offering-form-label">Почтовый индекс</div>
+              <input type="text" class="diffrent" placeholder="XX XXX">
+              <span class="error-message">Укажите почтовый индекс</span>
+            </div>
+            </div>
+            <div class="offering-form-secondRow">
+              <div class="offering-form-street">
+                <div class="offering-form-label">Улица</div>
+                <input type="text" class="diffrent" placeholder="Введите адрес или получателя">
+                <span class="error-message">Укажите улицу.</span>
+              </div>
+              <div class="offering-form-house">
+                <div class="offering-form-label">Дом</div>
+                <input type="text" placeholder="No">
+                <span class="error-message diffrent">Укажите номер дома.</span>
+              </div>
+              <div class="offering-form-flat">
+                <div class="offering-form-label">Квартира</div>
+                <input type="text" placeholder="No">
+                <span class="error-message diffrent">Укажите номер квартиры.</span>
+              </div>
+            </div>
+            <div class="offering-form-label">Дополнение (не обязательно)</div>
+            <textarea placeholder="Подъезд, наличие лифта, этаж, особенности расположения" class="offering-form-textarea-address"></textarea>
+            <div class="offering-form-label">Комментарий к заказу (не обязательно)</div>
+            <textarea placeholder="Комментарий к заказу, особые пожеления" class="offering-form-textarea-comment"></textarea>
+            <div class="offering-form-checkbox-container">
+              <label>
+                <input type="checkbox" class="offering-form-checkbox">
+                <span class="offering-form-custom-checkbox"></span>
+                Сохранить адрес
+              </label>
+            </div>
+          </form>
+          <div class="offering-frame">
+            <div class="offering-frame-title">Мой заказ</div>
+            <div class="offering-frame-container">
+              <div class="offering-frame-list">
+                <div class="frame-list-good real-good">
+                  <div class="frame-list-good-img">
+                    <img src="./imajes/small-good.svg" alt="">
+                  </div>
+                  <div class="frame-list-good-content">
+                    <div class="list-good-content-title">Detox набор</div>
+                    <div class="list-good-content-price">790₽</div>
+                  </div>
+                </div>
+              <div class="frame-list-good real-good">
+                <div class="frame-list-good-img">
+                  <img src="./imajes/small-good.svg" alt="">
+                </div>
+                <div class="frame-list-good-content">
+                  <div class="list-good-content-title">Detox набор</div>
+                  <div class="list-good-content-price">790₽</div>
+                </div>
+              </div>
+                <div class="frame-list-good delivery">
+                  <div class="frame-list-good-img">
+                    <img src="./imajes/delivery.svg" alt="">
+                  </div>
+                  <div class="frame-list-good-content">
+                    <div class="list-good-content-title">Доставка почтой россии</div>
+                    <div class="list-good-content-price">300₽</div>
+                  </div>
+                </div>
+                <div class="frame-list-total">
+                  <div class="frame-list-total-total">Итог</div>
+                  <div class="frame-list-total-price">0</div>
+                </div>
+              </div>
+              <div class="offering-frame-about">
+                <div class="frame-about-title">Обратите внимание!</div>
+                <div class="frame-about-description">Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей,
+                описанных в нашей <a href="" class="green">политике конфиденциальности.</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offering-form-btn">
+          <button type="button" class="offering-form-btn-submit btn">подтвердить заказ</button>
+          <button type="button" class="offering-form-btn-back">Назад к списку покупок</button>
+      </div>
+      </div>
+      <div class="check">
+        <div class="check-container">
+          <img src="./imajes/smile.svg" alt="">
+          <div class="check-subtitle">Спасибо!</div>
+          <div class="check-title">Заказ оформлен</div>
+          <div class="check-description">Ожидайте, мы свяжемся с вами в ближайшее время!</div>
+          <div class="check-btn btn">Назад к списку покупок</div>
+        </div>
+      </div>
+      <div class="advert">
+        <div class="advert-titles">
+          <div class="advert-alltitles">
+            <div class="alltitles-title">Наши лучшие товары</div>
+            <div class="alltitles-label">TOP</div>
+          </div>
+          <div class="advert-navigation">
+            <div class="advert-body-fraction"></div>
+            <div class="advert-title-link"><img src="./imajes/arrow-next-navigation.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="advert-body swiper">
+          <div class="advert-body-container swiper-wrapper">
+            <div class="advert-body-slide swiper-slide">
+              <div class="advert-body-img">
+                <picture>
+                  <source media="(max-width:710px)" type="image/png" srcset="./imajes/small-good-swiper.png">
+                  <img src="./imajes/good-swiper.png" alt="">
+                </picture>
+              </div>
+              <div class="advert-body-text">
+                <div class="body-text-subtitle subtitle">Комплекс</div>
+                <div class="body-text-title title">SAFRAN GUCU</div>
+                <div class="body-text-description description">Медово-оливковая смесь, с шафраном.</div>
+                <div class="body-text-price">2 190₽</div>
+                <div class="body-text-btns">
+                  <div class="body-text-more btn">Подробнее</div>
+                  <div class="body-text-buy">Купить</div>
+                </div>
+              </div>
+            </div>
+            <div class="advert-body-slide swiper-slide">
+              <div class="advert-body-img">
+                <picture>
+                  <source media="(max-width:710px)" type="image/png" srcset="./imajes/small-good-swiper.png">
+                  <img src="./imajes/good-swiper.png" alt="">
+                </picture>
+              </div>
+              <div class="advert-body-text">
+                <div class="body-text-subtitle subtitle">Комплекс</div>
+                <div class="body-text-title title">SAFRAN GUCU</div>
+                <div class="body-text-description description">Медово-оливковая смесь, с шафраном.</div>
+                <div class="body-text-price">2 190₽</div>
+                <div class="body-text-btns">
+                  <div class="body-text-more btn">Подробнее</div>
+                  <div class="body-text-buy">Купить</div>
+                </div>
+              </div>
+            </div>
+            <div class="advert-body-slide swiper-slide">
+              <div class="advert-body-img">
+                <picture>
+                  <source media="(max-width:710px)" type="image/png" srcset="./imajes/small-good-swiper.png">
+                  <img src="./imajes/good-swiper.png" alt="">
+                </picture>
+              </div>
+              <div class="advert-body-text">
+                <div class="body-text-subtitle subtitle">Комплекс</div>
+                <div class="body-text-title title">SAFRAN GUCU</div>
+                <div class="body-text-description description">Медово-оливковая смесь, с шафраном.</div>
+                <div class="body-text-price">2 190₽</div>
+                <div class="body-text-btns">
+                  <div class="body-text-more btn">Подробнее</div>
+                  <div class="body-text-buy">Купить</div>
+                </div>
+              </div>
+            </div>
+            <div class="advert-body-slide swiper-slide">
+              <div class="advert-body-img">
+                <picture>
+                  <source media="(max-width:710px)" type="image/png" srcset="./imajes/small-good-swiper.png">
+                  <img src="./imajes/good-swiper.png" alt="">
+                </picture>
+              </div>
+              <div class="advert-body-text">
+                <div class="body-text-subtitle subtitle">Комплекс</div>
+                <div class="body-text-title title">SAFRAN GUCU</div>
+                <div class="body-text-description description">Медово-оливковая смесь, с шафраном.</div>
+                <div class="body-text-price">2 190₽</div>
+                <div class="body-text-btns">
+                  <div class="body-text-more btn">Подробнее</div>
+                  <div class="body-text-buy">Купить</div>
+                </div>
+              </div>
+            </div>
+            <div class="advert-body-slide swiper-slide">
+              <div class="advert-body-img">
+                <picture>
+                  <source media="(max-width:710px)" type="image/png" srcset="./imajes/small-good-swiper.png">
+                  <img src="./imajes/good-swiper.png" alt="">
+                </picture>
+              </div>
+              <div class="advert-body-text">
+                <div class="body-text-subtitle subtitle">Комплекс</div>
+                <div class="body-text-title title">SAFRAN GUCU</div>
+                <div class="body-text-description description">Медово-оливковая смесь, с шафраном.</div>
+                <div class="body-text-price">2 190₽</div>
+                <div class="body-text-btns">
+                  <div class="body-text-more btn">Подробнее</div>
+                  <div class="body-text-buy">Купить</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-firstRow">
+      <div class="firstRow-logo">
+        <img src="./imajes/white-logo.svg" alt="">
+      </div>
+      <div class="firstRow-items">
+        <a href="" class="firstRow-item">Главная</a>
+        <a href="" class="firstRow-item">Товары</a>
+        <a href="" class="firstRow-item">Q&A</a>
+        <a href="" class="firstRow-item">Статьи</a>
+        <a href="" class="firstRow-item">О нас</a>
+        <a href="" class="firstRow-item">Оплата и доставка</a>
+        <a href="" class="firstRow-item">Контакты</a>
+      </div>
+    </div>
+    <div class="footer-secondRow">
+      <div class="secondRow-info">
+        <div class="secondRow-email">info@4ood.ru</div>
+        <div class="secondRow-tel">+7 926 171 67 66</div>
+        <div class="secondRow-address">Алтуфьевское ш., 27а, Москва, Россия, 129090</div>
+      </div>
+      <div class="secondRow-socialNetworks">
+        <svg width="86" height="18" viewBox="0 0 86 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.5 3H6.5C5.9477 3 5.5 3.44772 5.5 4V7H9.5C9.6137 6.99748 9.7216 7.0504 9.7892 7.1419C9.8568 7.2334 9.8758 7.352 9.84 7.46L9.1 9.66C9.0318 9.8619 8.8431 9.9984 8.63 10H5.5V17.5C5.5 17.7761 5.2761 18 5 18H2.5C2.22386 18 2 17.7761 2 17.5V10H0.5C0.22386 10 0 9.7761 0 9.5V7.5C0 7.2239 0.22386 7 0.5 7H2V4C2 1.79086 3.7909 0 6 0H9.5C9.7761 0 10 0.22386 10 0.5V2.5C10 2.77614 9.7761 3 9.5 3Z"
+            fill="#5B6773" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M45 0H37C34.2386 0 32 2.23858 32 5V13C32 15.7614 34.2386 18 37 18H45C47.7614 18 50 15.7614 50 13V5C50 2.23858 47.7614 0 45 0ZM48.25 13C48.2445 14.7926 46.7926 16.2445 45 16.25H37C35.2074 16.2445 33.7555 14.7926 33.75 13V5C33.7555 3.20735 35.2074 1.75549 37 1.75H45C46.7926 1.75549 48.2445 3.20735 48.25 5V13ZM45.75 5.25C46.3023 5.25 46.75 4.80228 46.75 4.25C46.75 3.69772 46.3023 3.25 45.75 3.25C45.1977 3.25 44.75 3.69772 44.75 4.25C44.75 4.80228 45.1977 5.25 45.75 5.25ZM41 4.5C38.5147 4.5 36.5 6.51472 36.5 9C36.5 11.4853 38.5147 13.5 41 13.5C43.4853 13.5 45.5 11.4853 45.5 9C45.5027 7.8057 45.0294 6.65957 44.1849 5.81508C43.3404 4.97059 42.1943 4.49734 41 4.5ZM38.25 9C38.25 10.5188 39.4812 11.75 41 11.75C42.5188 11.75 43.75 10.5188 43.75 9C43.75 7.4812 42.5188 6.25 41 6.25C39.4812 6.25 38.25 7.4812 38.25 9Z"
+            fill="#5B6773" />
+          <path
+            d="M85.9727 3.2174C85.5083 3.83692 84.9469 4.37733 84.3102 4.81776C84.3102 4.97959 84.3102 5.14142 84.3102 5.31225C84.3153 8.2511 83.1414 11.0691 81.0517 13.1345C78.9619 15.1999 76.1311 16.3399 73.1939 16.2989C71.4959 16.3046 69.8196 15.9169 68.2963 15.1661C68.2142 15.1302 68.1612 15.049 68.1615 14.9593V14.8604C68.1615 14.7313 68.2661 14.6267 68.3952 14.6267C70.0643 14.5716 71.6739 13.9929 72.9962 12.9724C71.4854 12.9419 70.1261 12.0469 69.5005 10.6707C69.4689 10.5956 69.4787 10.5093 69.5264 10.4432C69.5742 10.3771 69.6529 10.3407 69.7341 10.3471C70.1933 10.3932 70.6571 10.3505 71.1001 10.2212C69.4323 9.875 68.1791 8.4904 67.9997 6.7957C67.9934 6.7144 68.0298 6.6357 68.0959 6.5879C68.1619 6.5402 68.2481 6.5303 68.3233 6.562C68.7708 6.7595 69.254 6.8635 69.7431 6.8676C68.2817 5.90846 67.6505 4.08405 68.2064 2.42622C68.2638 2.26513 68.4017 2.14612 68.5694 2.11294C68.7371 2.07975 68.9098 2.13728 69.0242 2.26439C70.9963 4.36325 73.7059 5.61396 76.5818 5.75279C76.5082 5.45885 76.472 5.15676 76.474 4.85372C76.5009 3.26472 77.4841 1.84921 78.9633 1.26987C80.4424 0.690542 82.1248 1.06203 83.2229 2.21044C83.9713 2.06785 84.6949 1.81645 85.3706 1.46421C85.4201 1.43331 85.4829 1.43331 85.5324 1.46421C85.5633 1.51373 85.5633 1.57652 85.5324 1.62604C85.2051 2.37552 84.6522 3.00412 83.9508 3.42419C84.565 3.35296 85.1684 3.20807 85.7481 2.99264C85.7969 2.95942 85.861 2.95942 85.9098 2.99264C85.9507 3.01134 85.9813 3.04711 85.9934 3.09042C86.0055 3.13373 85.9979 3.18018 85.9727 3.2174Z"
+            fill="#5B6773" />
+        </svg>
+      </div>
+    </div>
+    <div class="footer-thirdRow">
+      <div class="thirdRow-copyright">©2022, All right reserved.</div>
+      <div class="thirdRow-pays">
+        <div class="pays-item">
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.72281 10.5359C2.70799 10.5362 2.69426 10.5364 2.68172 10.5365L0 10.5365V18.4456H2.59141V13.7812H2.76518L4.20976 18.4456H6.15947L7.60405 13.7847H7.77782V18.4456H10.3692V10.5365L7.8267 10.5365C7.80698 10.5365 7.7855 10.5362 7.76245 10.5359C7.40033 10.5309 6.65358 10.5207 6.34375 11.5664C6.15119 12.2162 5.79741 13.4308 5.2824 15.2101H5.08682C4.60659 13.5224 4.25663 12.3078 4.03693 11.5664C3.72656 10.5189 3.01427 10.531 2.72281 10.5359Z"
+              fill="#0F754E" />
+            <path
+              d="M14.0904 15.2009V10.5365H11.4449V18.4456H13.9526C13.9526 18.4456 14.7141 18.3765 15.0552 17.6167L16.7779 13.7812H16.9846V18.4456H19.6302V10.5365H17.1225C17.1225 10.5365 16.3955 10.6022 16.0544 11.3654L14.2972 15.2009H14.0904Z"
+              fill="#0F754E" />
+            <path
+              d="M25.9634 16.0896C27.2464 16.0896 28.4053 15.3407 28.7743 14.295H20.6733V18.4456H23.189V16.0896H25.9634Z"
+              fill="#0F754E" />
+            <path
+              d="M20.5413 10.5365H26.0847C28.2176 10.5365 29.2486 12.3413 28.9491 13.8047H23.7594C22.1896 13.8047 20.6733 12.2974 20.5413 10.5365Z"
+              fill="#0F754E" />
+          </svg>
+        </div>
+        <div class="pays-item">
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.05621 10.4274L2.6141 11.7827H1.5015L2.05621 10.4274Z" fill="#006FCF" />
+            <path
+              d="M14.9044 11.2431C14.7924 11.3108 14.6599 11.3131 14.5012 11.3131H13.511V10.5579H14.5147C14.6568 10.5579 14.805 10.5643 14.9012 10.6193C15.007 10.6688 15.0724 10.7742 15.0724 10.9198C15.0724 11.0684 15.0102 11.188 14.9044 11.2431Z"
+              fill="#006FCF" />
+            <path d="M21.4044 10.4274L21.9684 11.7827H20.8434L21.4044 10.4274Z" fill="#006FCF" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0 13.9176H1.39278L1.7068 13.1624H2.40983L2.72302 13.9176H5.46323V13.3402L5.70782 13.92H7.13033L7.37492 13.3316V13.9176H14.1848L14.1817 12.678H14.3134C14.4057 12.6812 14.4326 12.6897 14.4326 12.8415V13.9176H17.9547V13.629C18.2388 13.7808 18.6807 13.9176 19.2622 13.9176H20.7439L21.061 13.1624H21.764L22.0742 13.9176H24.9296V13.2002L25.362 13.9176H27.6501V9.17578H25.3856V9.73579L25.0685 9.17578H22.7449V9.73579L22.4537 9.17578H19.315C18.7896 9.17578 18.3278 9.2489 17.9547 9.45266V9.17578H15.7888V9.45266C15.5514 9.24264 15.2279 9.17578 14.8682 9.17578H6.95516L6.42422 10.4005L5.87897 9.17578H3.38655V9.73579L3.11275 9.17578H0.987114L0 11.4303V13.9176ZM12.1311 13.2498H9.40819V9.84992H12.1311V10.5579H10.2233V11.1707H12.0853V11.8676H10.2233V12.5466H12.1311V13.2498ZM7.96511 13.2498H8.80061V9.84992H7.44352L6.46361 12.1563L5.39688 9.84992H4.06653V13.0689L2.68023 9.84992H1.4692L0.00956225 13.2498H0.894849L1.21124 12.4914H2.90837L3.22157 13.2498H4.87941V10.5847L6.06442 13.2498H6.7801L7.96202 10.587L7.96511 13.2498ZM15.9703 10.7656C15.9703 11.3076 15.6074 11.5877 15.396 11.6718C15.5743 11.7395 15.7267 11.859 15.7992 11.9581C15.9143 12.1272 15.9341 12.2782 15.9341 12.5819V13.2498H15.112L15.1089 12.821C15.1089 12.8003 15.1091 12.7786 15.1093 12.7563C15.1112 12.5581 15.1135 12.3057 14.9802 12.1587C14.8611 12.0391 14.6796 12.0132 14.3861 12.0132H13.5111V13.2498H12.6961V9.84992H14.5709C14.9874 9.84992 15.2944 9.86089 15.5579 10.0128C15.8157 10.1646 15.9703 10.3863 15.9703 10.7656ZM17.2748 13.2498H16.4431V9.84992H17.2748V13.2498ZM26.9235 13.2498H25.7685L24.2234 10.698V13.2498H22.5634L22.2462 12.4914H20.553L20.2453 13.2498H19.2915C18.8953 13.2498 18.3936 13.1624 18.1095 12.8737C17.8231 12.5851 17.6741 12.194 17.6741 11.5758C17.6741 11.0716 17.7631 10.6106 18.1135 10.2464C18.377 9.97503 18.7896 9.84992 19.3513 9.84992H20.1405V10.5784H19.3679C19.0704 10.5784 18.9025 10.6225 18.7407 10.7798C18.6017 10.923 18.5064 11.1936 18.5064 11.5499C18.5064 11.9142 18.579 12.1768 18.7305 12.3484C18.856 12.4829 19.084 12.5237 19.2986 12.5237H19.6646L20.8134 9.85002H22.0348L23.4148 13.0658V9.85002H24.6559L26.0886 12.2178V9.85002H26.9235V13.2498Z"
+              fill="#006FCF" />
+            <path
+              d="M17.9911 17.1688C18.1497 17.1688 18.2845 17.1633 18.3935 17.0988C18.4992 17.0351 18.5623 16.9179 18.5623 16.7724C18.5623 16.6269 18.4992 16.5216 18.3935 16.4665C18.2949 16.4081 18.1497 16.4051 18.0045 16.4051H17.0009V17.1688H17.9911Z"
+              fill="#006FCF" />
+            <path d="M11.2994 17.4079L12.5509 18.7931V16.0667L11.2994 17.4079Z" fill="#006FCF" />
+            <path
+              d="M7.31494 18.3937H9.319L10.2501 17.396L9.3585 16.405H7.31494V17.0232H9.10444V17.7171H7.31494V18.3937Z"
+              fill="#006FCF" />
+            <path
+              d="M13.3627 17.2711H14.4161C14.7293 17.2711 14.9241 17.1161 14.9241 16.822C14.9241 16.5246 14.7198 16.4051 14.4255 16.4051H13.3627V17.2711Z"
+              fill="#006FCF" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M29 18.6673C28.802 18.956 28.4162 19.1024 27.8939 19.1024H26.3198V18.3731H27.8875C28.043 18.3731 28.1518 18.3527 28.2174 18.2889C28.2741 18.2363 28.3137 18.1599 28.3137 18.0671C28.3137 17.9681 28.2741 17.8894 28.2142 17.8423C28.155 17.7904 28.0689 17.7668 27.927 17.7668C27.8769 17.7651 27.8261 17.7637 27.7747 17.7623C27.0408 17.7425 26.2068 17.72 26.2068 16.7142C26.2068 16.221 26.5209 15.7018 27.3763 15.7018H28.9999V15.0252H27.4914C27.0362 15.0252 26.7055 15.1339 26.4713 15.3029V15.0252H24.24C23.8832 15.0252 23.4644 15.1134 23.2663 15.3029V15.0252H19.2818V15.3029C18.9647 15.0748 18.4296 15.0252 18.1827 15.0252H15.5545V15.3029C15.3036 15.0607 14.7457 15.0252 14.4057 15.0252H11.4643L10.7912 15.7514L10.1608 15.0252H5.76696V19.7702H10.0781L10.7717 19.0325L11.425 19.7702L14.0824 19.7726V18.6564H14.3437C14.6962 18.6618 15.1121 18.6477 15.479 18.4895V19.7701H17.6709V18.5334H17.7766C17.9115 18.5334 17.9248 18.539 17.9248 18.6734V19.77H24.5833C25.0061 19.77 25.4479 19.6622 25.6926 19.4664V19.77H27.8047C28.2442 19.77 28.6734 19.7086 29 19.5513V18.6673ZM25.7486 17.3088C25.9073 17.4726 25.9924 17.6793 25.9924 18.0293C25.9924 18.7609 25.5339 19.1023 24.7119 19.1023H23.1243V18.3731H24.7055C24.8601 18.3731 24.9698 18.3527 25.0385 18.2889C25.0945 18.2363 25.1348 18.1599 25.1348 18.0671C25.1348 17.9681 25.0912 17.8894 25.0353 17.8422C24.973 17.7904 24.887 17.7668 24.745 17.7668C24.6951 17.7651 24.6444 17.7637 24.5931 17.7623C23.8618 17.7425 23.0281 17.7199 23.0281 16.7142C23.0281 16.221 23.339 15.7018 24.1935 15.7018H25.8276V16.4256H24.3324C24.1842 16.4256 24.0878 16.4311 24.0058 16.487C23.9165 16.542 23.8834 16.6238 23.8834 16.7317C23.8834 16.8599 23.9592 16.9472 24.0618 16.9849C24.1477 17.0148 24.2401 17.0235 24.379 17.0235L24.8177 17.0353C25.2602 17.0461 25.564 17.1224 25.7486 17.3088ZM18.8858 17.522C19.0672 17.5887 19.2156 17.7084 19.2851 17.8075C19.4002 17.9735 19.4168 18.1285 19.4201 18.4282V19.1023H18.6018V18.6769C18.6018 18.6565 18.602 18.6351 18.6022 18.6129C18.604 18.4133 18.6064 18.1536 18.4701 18.0112C18.3509 17.8894 18.1694 17.8603 17.872 17.8603H17.001V19.1023H16.1819V15.7017H18.0638C18.4764 15.7017 18.777 15.7198 19.0445 15.8622C19.3018 16.0171 19.4635 16.2294 19.4635 16.6173C19.4634 17.1601 19.1004 17.4371 18.8858 17.522ZM19.9155 15.7017H22.636V16.4049H20.7272V17.0232H22.5894V17.717H20.7272V18.3936L22.636 18.3967V19.1023H19.9155V15.7017ZM15.7992 16.822C15.7992 17.7667 15.0922 17.9617 14.3798 17.9617H13.3627V19.1023H11.7784L10.7747 17.9766L9.73166 19.1023H6.503V15.7017H9.78134L10.7842 16.8164L11.821 15.7017H14.4255C15.0724 15.7017 15.7992 15.8802 15.7992 16.822Z"
+              fill="#006FCF" />
+            <path
+              d="M27.5144 16.4253H29V17.393C28.9987 17.3913 28.9973 17.3896 28.996 17.3879L28.9918 17.3823L28.9896 17.3795L28.9895 17.3794C28.9708 17.3549 28.9523 17.3307 28.9244 17.3088C28.743 17.1225 28.4454 17.0461 27.9996 17.0351L27.5578 17.0233C27.4221 17.0233 27.3297 17.0146 27.2437 16.9847C27.1381 16.947 27.0655 16.8597 27.0655 16.7314C27.0655 16.6236 27.0986 16.5418 27.1846 16.4868C27.2676 16.4309 27.3661 16.4253 27.5144 16.4253Z"
+              fill="#006FCF" />
+          </svg>
+        </div>
+        <div class="pays-item">
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.3589 9.96425L12.4215 19.0222H10.078L12.0156 9.96425H14.3589ZM24.2177 15.8131L25.4511 12.4116L26.1609 15.8131H24.2177ZM26.8332 19.0222H29L27.107 9.96425H25.1082C24.6578 9.96425 24.278 10.2254 24.1099 10.6282L20.5938 19.0222H23.0548L23.5434 17.6694H26.5494L26.8332 19.0222ZM20.7158 16.0651C20.726 13.6745 17.4112 13.5421 17.4334 12.474C17.4405 12.1494 17.7502 11.8037 18.427 11.7153C18.7625 11.6721 19.6884 11.6371 20.738 12.1207L21.1485 10.1992C20.5848 9.99522 19.8594 9.79883 18.9566 9.79883C16.6401 9.79883 15.0104 11.0293 14.9974 12.7928C14.9825 14.0969 16.1615 14.824 17.0479 15.2583C17.9618 15.7022 18.268 15.9868 18.2636 16.3835C18.2572 16.9912 17.5348 17.2603 16.8621 17.2705C15.6834 17.2889 15 16.9519 14.4555 16.6981L14.0301 18.6838C14.5785 18.9348 15.589 19.1532 16.6354 19.1644C19.0982 19.1644 20.7085 17.9483 20.7158 16.0651ZM11.0105 9.96425L7.21358 19.0222H4.73687L2.86828 11.7933C2.75501 11.3488 2.6562 11.1854 2.3117 10.9976C1.74819 10.6916 0.817966 10.4053 0 10.2273L0.0554145 9.96425H4.04277C4.55066 9.96425 5.00762 10.3022 5.12395 10.8873L6.11101 16.1293L8.54861 9.96425H11.0105Z"
+              fill="#1434CB" />
+          </svg>
+        </div>
+        <div class="pays-item">
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.27541 25.6586V24.1651C5.28418 24.0395 5.26605 23.9135 5.22226 23.7954C5.17846 23.6774 5.11 23.57 5.02143 23.4805C4.93287 23.391 4.82624 23.3214 4.70865 23.2763C4.59107 23.2313 4.46523 23.2119 4.33954 23.2193C4.17503 23.2086 4.01066 23.2422 3.86356 23.3166C3.71646 23.391 3.59202 23.5035 3.50321 23.6424C3.42226 23.5077 3.30648 23.3973 3.16806 23.3228C3.02963 23.2483 2.87369 23.2126 2.71665 23.2193C2.57976 23.2124 2.44345 23.2414 2.32121 23.3034C2.19897 23.3654 2.09503 23.4582 2.01971 23.5727V23.279H1.50195V25.6586H2.02466V24.3394C2.01336 24.258 2.02023 24.1751 2.04477 24.0966C2.06931 24.0182 2.11092 23.9462 2.1666 23.8857C2.22229 23.8253 2.29067 23.7779 2.36683 23.747C2.443 23.7162 2.52506 23.7025 2.60712 23.7071C2.95061 23.7071 3.12487 23.9312 3.12487 24.3344V25.6586H3.64757V24.3394C3.63712 24.2581 3.64458 24.1755 3.66944 24.0975C3.69429 24.0194 3.73594 23.9478 3.79145 23.8875C3.84696 23.8272 3.91499 23.7799 3.99075 23.7487C4.06652 23.7176 4.14819 23.7034 4.23002 23.7071C4.58345 23.7071 4.75271 23.9312 4.75271 24.3344V25.6586H5.27541ZM13.0115 23.279H12.1652V22.5572H11.6425V23.279H11.1596V23.752H11.6425V24.8372C11.6425 25.3897 11.8566 25.7183 12.4689 25.7183C12.6976 25.719 12.9219 25.6552 13.116 25.5341L12.9667 25.0911C12.8279 25.1739 12.6703 25.2201 12.5087 25.2255C12.2498 25.2255 12.1652 25.0661 12.1652 24.8273V23.752H13.0115V23.279ZM17.4272 23.2193C17.3009 23.2156 17.176 23.246 17.0656 23.3073C16.9553 23.3686 16.8635 23.4586 16.7999 23.5678V23.279H16.2872V25.6586H16.8049V24.3244C16.8049 23.9312 16.9741 23.7121 17.3127 23.7121C17.4234 23.7106 17.5334 23.7309 17.6363 23.7719L17.7955 23.284C17.6773 23.2417 17.5527 23.2198 17.4272 23.2193V23.2193ZM10.7514 23.4682C10.4584 23.2939 10.1214 23.2075 9.78068 23.2193C9.17831 23.2193 8.79004 23.508 8.79004 23.9809C8.79004 24.3693 9.07876 24.6082 9.6114 24.6829L9.85534 24.7177C10.1391 24.7575 10.2735 24.8322 10.2735 24.9666C10.2735 25.1508 10.0843 25.2554 9.73089 25.2554C9.44659 25.2635 9.1678 25.1759 8.93935 25.0064L8.69544 25.4097C8.997 25.6203 9.35823 25.7285 9.72591 25.7183C10.4129 25.7183 10.8111 25.3947 10.8111 24.9417C10.8111 24.5235 10.4975 24.3045 9.97981 24.2298L9.7359 24.195C9.51185 24.1651 9.33266 24.1204 9.33266 23.9611C9.33266 23.7868 9.50186 23.6822 9.78566 23.6822C10.0462 23.6862 10.3015 23.7564 10.5274 23.8864L10.7514 23.4682ZM24.6206 23.2193C24.4944 23.2156 24.3695 23.246 24.2591 23.3073C24.1487 23.3686 24.0569 23.4586 23.9934 23.5678V23.279H23.4806V25.6586H23.9983V24.3244C23.9983 23.9312 24.1676 23.7121 24.5061 23.7121C24.6169 23.7106 24.7268 23.7309 24.8297 23.7719L24.989 23.284C24.8708 23.2417 24.7462 23.2198 24.6206 23.2193V23.2193ZM17.9498 24.4688C17.943 24.6364 17.9713 24.8036 18.0329 24.9597C18.0945 25.1157 18.1881 25.2571 18.3077 25.3748C18.4273 25.4925 18.5702 25.5839 18.7272 25.6431C18.8842 25.7022 19.0518 25.7279 19.2193 25.7183C19.5302 25.734 19.8356 25.6327 20.0755 25.4346L19.8266 25.0164C19.6477 25.1528 19.4294 25.2279 19.2044 25.2304C19.0104 25.2187 18.8281 25.1333 18.6949 24.9918C18.5617 24.8502 18.4875 24.6632 18.4875 24.4688C18.4875 24.2744 18.5617 24.0874 18.6949 23.9458C18.8281 23.8043 19.0104 23.7189 19.2044 23.7071C19.4294 23.7097 19.6477 23.7848 19.8266 23.9212L20.0755 23.503C19.8356 23.3049 19.5301 23.2037 19.2193 23.2193C19.0518 23.2098 18.8842 23.2354 18.7272 23.2946C18.5702 23.3537 18.4273 23.4451 18.3077 23.5627C18.1882 23.6804 18.0946 23.8218 18.0329 23.9779C17.9713 24.1339 17.943 24.3011 17.9498 24.4688V24.4688ZM22.7986 24.4688V23.279H22.2809V23.5678C22.1925 23.4539 22.0781 23.3628 21.9474 23.3022C21.8166 23.2416 21.6732 23.2131 21.5292 23.2193C21.2084 23.235 20.9059 23.3735 20.6844 23.6061C20.4629 23.8387 20.3394 24.1476 20.3394 24.4688C20.3394 24.79 20.4629 25.0989 20.6844 25.3315C20.9059 25.5641 21.2084 25.7026 21.5292 25.7183C21.6732 25.7245 21.8166 25.6961 21.9474 25.6354C22.0782 25.5748 22.1925 25.4837 22.2809 25.3698V25.6586H22.7986V24.4688ZM20.872 24.4688C20.8801 24.3283 20.929 24.1933 21.0129 24.0804C21.0967 23.9675 21.2118 23.8816 21.3438 23.8332C21.4759 23.7849 21.6193 23.7763 21.7562 23.8085C21.8931 23.8407 22.0176 23.9122 22.1144 24.0143C22.2111 24.1164 22.2759 24.2445 22.3007 24.383C22.3254 24.5214 22.3092 24.6641 22.2538 24.7934C22.1985 24.9227 22.1065 25.033 21.9893 25.1106C21.872 25.1883 21.7346 25.23 21.5939 25.2304C21.4953 25.2318 21.3975 25.2127 21.3067 25.1743C21.2159 25.136 21.134 25.0793 21.0661 25.0077C20.9983 24.9362 20.9461 24.8513 20.9127 24.7586C20.8793 24.6658 20.8654 24.5671 20.872 24.4688V24.4688ZM14.6245 23.2193C14.3016 23.2363 13.9979 23.3777 13.777 23.6138C13.5561 23.8498 13.4352 24.1623 13.4397 24.4856C13.4443 24.8089 13.5738 25.1178 13.8012 25.3477C14.0285 25.5775 14.3361 25.7104 14.6593 25.7183C15.0145 25.7308 15.3618 25.6121 15.635 25.3848L15.3811 25.0015C15.1845 25.159 14.9411 25.2466 14.6892 25.2504C14.5181 25.2648 14.3481 25.212 14.2153 25.1033C14.0824 24.9946 13.997 24.8384 13.9773 24.6679H15.7446C15.7495 24.6032 15.7545 24.5385 15.7545 24.4688C15.7495 23.7271 15.2915 23.2193 14.6245 23.2193V23.2193ZM14.6145 23.6822C14.7709 23.6792 14.9221 23.7383 15.035 23.8465C15.1479 23.9548 15.2133 24.1033 15.2169 24.2597H13.9823C13.9914 24.1 14.0626 23.9501 14.1807 23.8422C14.2989 23.7343 14.4546 23.6769 14.6145 23.6822V23.6822ZM27.6026 24.4688V22.3232H27.0848V23.5678C26.9964 23.4539 26.8821 23.3628 26.7513 23.3022C26.6205 23.2416 26.4771 23.2131 26.3331 23.2193C26.0123 23.235 25.7098 23.3735 25.4883 23.6061C25.2668 23.8387 25.1433 24.1476 25.1433 24.4688C25.1433 24.79 25.2668 25.0989 25.4883 25.3315C25.7098 25.5641 26.0123 25.7026 26.3331 25.7183C26.4771 25.7245 26.6205 25.6961 26.7513 25.6354C26.8821 25.5748 26.9964 25.4837 27.0848 25.3698V25.6586H27.6026V24.4688ZM28.4656 25.3137C28.4977 25.3135 28.5296 25.3198 28.5592 25.3323C28.5877 25.3442 28.6137 25.3614 28.6358 25.383C28.6577 25.4046 28.6752 25.4302 28.6873 25.4584C28.6998 25.4874 28.7062 25.5186 28.7062 25.5501C28.7062 25.5817 28.6998 25.6129 28.6873 25.6419C28.6751 25.67 28.6576 25.6954 28.6358 25.7169C28.6137 25.7385 28.5877 25.7558 28.5592 25.7679C28.5297 25.7806 28.4978 25.787 28.4656 25.7868C28.4182 25.7873 28.3718 25.7738 28.332 25.748C28.2923 25.7222 28.261 25.6853 28.2421 25.6419C28.2297 25.6129 28.2233 25.5817 28.2233 25.5501C28.2233 25.5186 28.2297 25.4874 28.2421 25.4584C28.2543 25.4302 28.2717 25.4046 28.2935 25.383C28.3155 25.3613 28.3416 25.344 28.3703 25.3323C28.4005 25.3198 28.4329 25.3135 28.4656 25.3137V25.3137ZM28.4656 25.7346C28.4901 25.7348 28.5144 25.7299 28.5369 25.7201C28.5586 25.7107 28.5782 25.6974 28.5949 25.6807C28.6292 25.646 28.6485 25.5991 28.6485 25.5502C28.6485 25.5014 28.6292 25.4545 28.5949 25.4198C28.5782 25.4032 28.5586 25.3899 28.5369 25.3807C28.5144 25.3711 28.4901 25.3663 28.4656 25.3665C28.4406 25.3663 28.4159 25.3711 28.3929 25.3807C28.3709 25.3898 28.3509 25.403 28.334 25.4198C28.2996 25.4545 28.2803 25.5014 28.2803 25.5502C28.2803 25.5991 28.2996 25.646 28.334 25.6807C28.3509 25.6975 28.3709 25.7109 28.3929 25.7201C28.4159 25.7298 28.4406 25.7348 28.4656 25.7346V25.7346ZM28.4795 25.4395C28.5028 25.438 28.5259 25.4447 28.5448 25.4584C28.5523 25.4646 28.5583 25.4724 28.5622 25.4813C28.5662 25.4902 28.5681 25.4999 28.5676 25.5097C28.5679 25.518 28.5664 25.5263 28.5633 25.5341C28.5601 25.5418 28.5554 25.5488 28.5494 25.5546C28.535 25.5674 28.5167 25.575 28.4975 25.5763L28.5694 25.6592H28.5132L28.4465 25.5769H28.425V25.6592H28.3781V25.4395H28.4795ZM28.425 25.4807V25.5393H28.479C28.4893 25.5398 28.4996 25.5372 28.5085 25.532C28.5122 25.5295 28.5151 25.5262 28.517 25.5223C28.5189 25.5184 28.5198 25.514 28.5195 25.5097C28.5198 25.5054 28.5189 25.5011 28.5169 25.4973C28.515 25.4935 28.5121 25.4903 28.5085 25.4879C28.4996 25.4827 28.4893 25.4802 28.479 25.4807H28.425ZM25.676 24.4688C25.6841 24.3283 25.733 24.1934 25.8169 24.0804C25.9007 23.9675 26.0157 23.8816 26.1478 23.8333C26.2799 23.785 26.4232 23.7764 26.5602 23.8086C26.6971 23.8407 26.8216 23.9123 26.9183 24.0144C27.015 24.1164 27.0798 24.2446 27.1046 24.383C27.1293 24.5215 27.113 24.6642 27.0577 24.7935C27.0024 24.9227 26.9104 25.033 26.7931 25.1107C26.6759 25.1883 26.5385 25.23 26.3978 25.2304C26.2992 25.2318 26.2015 25.2127 26.1106 25.1743C26.0198 25.136 25.9379 25.0793 25.8701 25.0077C25.8023 24.9361 25.75 24.8513 25.7166 24.7585C25.6832 24.6658 25.6694 24.5671 25.676 24.4688V24.4688ZM8.19264 24.4688V23.279H7.67489V23.5678C7.58652 23.4539 7.47217 23.3628 7.34139 23.3022C7.21061 23.2416 7.0672 23.2131 6.92319 23.2193C6.60238 23.235 6.29992 23.3735 6.07844 23.6061C5.85695 23.8387 5.73342 24.1476 5.73342 24.4688C5.73342 24.79 5.85695 25.0989 6.07844 25.3315C6.29992 25.5641 6.60238 25.7026 6.92319 25.7183C7.06721 25.7245 7.21061 25.6961 7.34139 25.6354C7.47217 25.5748 7.58652 25.4837 7.67489 25.3698V25.6586H8.19264V24.4688ZM6.2661 24.4688C6.27414 24.3283 6.32311 24.1934 6.40695 24.0804C6.49079 23.9675 6.60584 23.8816 6.73792 23.8333C6.87 23.785 7.01334 23.7764 7.15025 23.8086C7.28716 23.8407 7.41166 23.9123 7.5084 24.0144C7.60514 24.1164 7.66989 24.2446 7.69466 24.3831C7.71943 24.5215 7.70314 24.6642 7.6478 24.7935C7.59246 24.9227 7.50049 25.033 7.38323 25.1107C7.26597 25.1883 7.12855 25.23 6.98791 25.2304C6.88934 25.2318 6.79155 25.2127 6.70072 25.1743C6.60989 25.136 6.52799 25.0793 6.46018 25.0077C6.39237 24.9361 6.34011 24.8513 6.30671 24.7585C6.27331 24.6658 6.25948 24.5671 6.2661 24.4688V24.4688Z"
+              fill="#231F20" />
+            <path d="M18.4208 5.14404H10.5791V19.2358H18.4208V5.14404Z" fill="#FF5F00" />
+            <path
+              d="M11.0772 12.1905C11.076 10.8333 11.3835 9.4937 11.9766 8.27299C12.5696 7.05227 13.4326 5.98247 14.5002 5.14458C13.1781 4.1054 11.5903 3.45916 9.91835 3.2797C8.24636 3.10024 6.55761 3.39482 5.04512 4.12977C3.53263 4.86471 2.25743 6.01036 1.36527 7.43578C0.473118 8.8612 0 10.5089 0 12.1905C0 13.8721 0.473118 15.5197 1.36527 16.9452C2.25743 18.3706 3.53263 19.5162 5.04512 20.2512C6.55761 20.9861 8.24636 21.2807 9.91835 21.1012C11.5903 20.9218 13.1781 20.2755 14.5002 19.2364C13.4326 18.3985 12.5696 17.3287 11.9766 16.108C11.3835 14.8872 11.076 13.5476 11.0772 12.1905V12.1905Z"
+              fill="#EB001B" />
+            <path
+              d="M28.9997 12.1905C28.9998 13.872 28.5267 15.5197 27.6346 16.9451C26.7425 18.3705 25.4674 19.5162 23.9549 20.2512C22.4424 20.9861 20.7537 21.2807 19.0817 21.1012C17.4098 20.9218 15.822 20.2755 14.5 19.2363C15.5667 18.3976 16.429 17.3276 17.0219 16.1071C17.6148 14.8866 17.9229 13.5474 17.9229 12.1905C17.9229 10.8335 17.6148 9.49433 17.0219 8.27381C16.429 7.05329 15.5667 5.98332 14.5 5.14458C15.822 4.1054 17.4098 3.45915 19.0817 3.2797C20.7537 3.10024 22.4424 3.39483 23.9549 4.12978C25.4674 4.86473 26.7425 6.01039 27.6346 7.43581C28.5267 8.86123 28.9998 10.5089 28.9997 12.1905V12.1905Z"
+              fill="#F79E1B" />
+            <path
+              d="M28.1448 17.7434V17.4549H28.2611V17.3961H27.9648V17.4549H28.0812V17.7434H28.1448ZM28.72 17.7434V17.3955H28.6291L28.5247 17.6348L28.4202 17.3955H28.3293V17.7434H28.3935V17.481L28.4914 17.7072H28.5579L28.6559 17.4804V17.7434H28.72Z"
+              fill="#F79E1B" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
